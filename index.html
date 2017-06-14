@@ -1,3 +1,15 @@
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    </body>
+</html>>
+
 <html>
 <head>
     
@@ -15,7 +27,7 @@
          document.getElementById('OptionConfig').onclick(function() 
                 {
                     FB.ui
-                    ({
+                        ({
                         method: 'share',
                         display: 'popup',
                         href: 'https://developers.facebook.com/docs/',
@@ -30,7 +42,7 @@
                     xfbml      : true,
                     version    : 'v2.9'
                 });
-                FB.AppEvents.logPageView();
+                FB.AppEvents.logPageView(); 
             };
 
                 (function(d, s, id){
@@ -66,15 +78,16 @@
     </li>
 
 </ol>
-<p>
-    Justsomething.
-</p>
-
 <div><a href="https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer">Something</a>
 </div>
 <div id = "demo"> </div>
 <div id = "map"> </div>
-<button type ="button" id = "OptionConfig">Share</button>
+
+
+<!-- 
+    <button type ="button" id = "OptionConfig">Share</button> 
+    //Due to null pointer exception, this lane of code is opted out.    
+-->
 
 
 <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCBjft7kRuS1sGr8JXJqOL2O4BN3OIP1gw&v=3&callback=initMap"> 
