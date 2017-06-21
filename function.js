@@ -83,3 +83,9 @@ function StringMatch(Statement,Target)
     var andCount = testString.match(expression).length;
     //Due to .length, it will give out amount of strings matched in the statment.
 }
+
+function CURRENT_DATE() 
+{
+    
+    return Date.getTime();
+}
