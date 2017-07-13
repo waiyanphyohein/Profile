@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
  body
-    {
+{
         align-content: space-around;
         font-family:  Arial, Helvetica, sans-serif;
         background-color: black;
@@ -14,19 +14,41 @@
         height: 100%;
         margin: 0;
         padding: 0;
-    }
-h1{
-    background-color: aqua;
-    font-size: 200%;
 }
 
+h1 {
+    text-transform: uppercase;
+    word-spacing: 0.05em;
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    padding-top: 100px;
+    text-align: left;
+    width: 60%;
+}	
+
+
 h2{
-    background-color: aquamarine;
-    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    text-align: left;
+    width: 70%;
 }
 p{
-    font-size: 0.75em;
-    line-height: 1.7em;  
+    font-weight: 100;
+    color: AliceBlue;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 1.7em;
+    text-align: left;
+    width: 100%;
 }
 #map
     {
