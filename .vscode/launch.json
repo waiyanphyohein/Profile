@@ -18,7 +18,7 @@
             "type": "chrome",
             "request": "launch",
             "sourceMaps": true,
-            "file": "${workspaceRoot}/index.html"
+            "file": "${workspaceRoot}/codeAcademySample.html"
         }
     ]
 }

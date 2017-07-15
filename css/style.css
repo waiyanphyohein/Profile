@@ -87,3 +87,14 @@ p {
   float: left;
   width: 50px;
 }
+.book {
+  font-family: Georgia, serif;
+}
+
+.domestic {
+  font-color: #0902CC;
+}
+
+.foreign {
+  font-color: #B097DD;
+}
