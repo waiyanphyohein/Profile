@@ -18,7 +18,7 @@
             "type": "chrome",
             "request": "launch",
             "sourceMaps": true,
-            "file": "${workspaceRoot}/HtmlSample2.html"
+            "file": "${workspaceRoot}/HtmlSample5.html"
         }
     ]
 }
