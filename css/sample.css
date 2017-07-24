@@ -1,9 +1,10 @@
 
-
+/*
 *{
     box-sizing: border-box;
      border: 1px solid rgba(0, 0, 0, 0.3);
 }
+    */
  body
 {
         align-content: space-around;
@@ -71,6 +72,10 @@ ol
         color: skyblue;
         size: 10% 10%;
     }
+li
+{
+    display: inline-block;
+}
 #Facebook
 {
     width: 50px;
