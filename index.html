@@ -33,7 +33,24 @@
 </head>
 
 <body>
-    <script>
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.10'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
         </script>
 </br>
 <ol>
@@ -63,9 +80,9 @@
     </li>
     <li id = "Facebook">
         Facebook</br>
-         <a target="_blank" href = "https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer">
         <img id = "FacebookIcon" src="http://www.freeiconspng.com/uploads/facebook-logo-png-20.png" alt="Facebook" /> 
          </a>
+         <a target="_blank" href = "https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer">
     </li>
 
 </ol>
@@ -74,7 +91,7 @@
 <div id = "demo"> </div>
 <div id = "map"> </div>
  
-    <button id = "OptionConfig" class="button" style="vertical-align:middle"><span>Submit</span></button>
+    <button id = "OptionConfig" class="button" style="vertical-align:middle" onclick="window.location.href='resume/ResumeV.1.pdf'"><span>Submit</span></button>
 
    <!-- //Due to null pointer exception, this lane of code is opted out. --> 
 
@@ -82,8 +99,9 @@
 <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCBjft7kRuS1sGr8JXJqOL2O4BN3OIP1gw&v=3&callback=initMap"> 
 </script>
 
+</br></br>
 <a href="resume/ResumeV.1.pdf" download>Download Resume</a>
-
+</br>
 </br>
 <label> Description: <input type="text" name = "Description"/> </label> </br>
 <button style="vertical-align:middle">Submit</button>
